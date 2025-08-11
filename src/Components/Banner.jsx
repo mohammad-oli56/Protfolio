@@ -19,13 +19,14 @@ const Banner = () => {
                         <button className="bg-black text-white px-5 py-2 rounded-md font-semibold">
                             Hire me
                         </button>
-                        <button className="text-gray-700 font-medium">
+                        <a href="#project" className="text-gray-700 font-medium">
                             Latest Projects →
-                        </button>
+                        </a>
+
                     </div>
 
                     {/* Stats */}
-                    <div className="flex space-x-8 pt-4">
+                    {/* <div className="flex space-x-8 pt-4">
                         <div>
                             <p className="text-2xl font-bold">5 Years</p>
                             <p className="text-gray-500 text-sm">Experience</p>
@@ -38,17 +39,17 @@ const Banner = () => {
                             <p className="text-2xl font-bold">99.8%</p>
                             <p className="text-gray-500 text-sm">Satisfaction</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Right Image */}
                 <div className="flex-1 relative  mt-10 md:mt-0 flex justify-center">
                     <div className="relative  w-70 h-62  border-8 border-gray-400  rounded-lg object-cover">
                         <img
-                        src="https://i.ibb.co.com/jvjSHp1N/Whats-App-Image-2025-08-11-at-11-07-01-d6e08cc3-removebg-preview.png"
-                        alt="oli"
-                        className="absolute -top-12 w-90"
-                    />
+                            src="https://i.ibb.co.com/jvjSHp1N/Whats-App-Image-2025-08-11-at-11-07-01-d6e08cc3-removebg-preview.png"
+                            alt="oli"
+                            className="absolute -top-12 w-90"
+                        />
                     </div>
 
                     {/* Tag Labels */}

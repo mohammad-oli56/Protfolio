@@ -88,7 +88,7 @@ const ClipPathLinks = () => {
 
   return (
    <>
-   <h1 className="text-center text-3xl font-bold mt-4">My Skills </h1>
+   <h1 id="skil" className="text-center text-3xl font-bold mt-4">My Skills </h1>
     <div className="divide-y m-8 rounded-2xl divide-neutral-900 border border-neutral-900">
         
       {/* Row 1 */}
