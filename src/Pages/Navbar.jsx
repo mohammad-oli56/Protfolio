@@ -1,29 +1,29 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
-    return (
-        <div
-            className="fixed top-0 left-0 right-0 z-50 bg-transparent"
-            data-aos="fade-down"
-        >
-            <div className="flex justify-center items-center px-4 py-3">
-                <ul className="flex flex-wrap justify-center md:px-15 px-6 py-4 rounded-2xl backdrop-blur bg-green-400/10 text-white gap-5 md:gap-10">
-                    <li>
-                        <a href="#home" className="hover:text-primary transition-all duration-200">Home</a>
-                    </li>
-                    <li>
-                        <a href="#projects" className="hover:text-primary transition-all duration-200">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#about" className="hover:text-primary transition-all duration-200">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact" className="hover:text-primary transition-all duration-200">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    );
+  return (
+    <div className="flex justify-center mt-6 sticky top-0 z-50">
+      <div className="bg-white/50 backdrop-blur-md border rounded-md flex items-center space-x-6 shadow-sm">
+        {/* Logo */}
+        <span className="playwrite-au-qld rounded-l-md bg-orange-600 py-2 text-2xl text-white font-extrabold flex items-center px-3 border-r-1 border-gray-300">
+          O L I
+        </span>
+
+        {/* Navigation Links */}
+        <ul className="flex space-x-4 text-sm text-gray-700">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+        {/* Button */}
+        <button className="bg-black text-white px-4 py-2 rounded-md text-sm border-l-1 mx-1.5 border-gray-300 hover:bg-gray-800">
+          Hire me
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

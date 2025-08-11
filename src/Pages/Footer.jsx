@@ -75,7 +75,7 @@ const Footer = () => {
             className="text-sm text-center md:text-right"
             data-aos="fade-left"
             data-aos-delay="900"
-            data-aos-duration="1200"
+            data-aos-duration="1200" 
           >
             <p>© {new Date().getFullYear()} Mohammad Oli. All rights reserved.</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">
