@@ -9,6 +9,7 @@ import { HoverImageLinks } from '../Components/HoverImageLinks';
 import Skills from '../Components/Skills';
 import ClipPathLinks from '../Try/ClipPathLinks';
 import ScrollTimeline from '../Components/ScrollTimeline';
+import Contact from '../Components/Contact';
 
 
 
@@ -24,9 +25,10 @@ const Home = () => {
             <ScrollTimeline></ScrollTimeline>
              <HoverImageLinks></HoverImageLinks>
             {/* <SkillSection/> */}
-            <DrawCircleText></DrawCircleText>
+            {/* <DrawCircleText></DrawCircleText> */}
             {/* <ProjectSection/> */}
-            <ContactSection/>
+            {/* <ContactSection/> */}
+            <Contact></Contact>
         
         </div>
     );

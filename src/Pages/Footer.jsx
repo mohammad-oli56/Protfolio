@@ -8,23 +8,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer
-      className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 py-8 shadow-2xl"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-    >
+    <footer className="bg-black dark:text-gray-300 py-8 shadow-2xl">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
 
           {/* Left: Name and message */}
-          <div
-            className="text-center md:text-left"
-            data-aos="fade-right"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-            data-aos-easing="ease-in-out"
-          >
+          <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
               Mohammad Oli
             </h3>
@@ -32,12 +21,7 @@ const Footer = () => {
           </div>
 
           {/* Center: Social Links */}
-          <div
-            className="flex gap-4 text-lg"
-            data-aos="zoom-in"
-            data-aos-delay="600"
-            data-aos-duration="1200"
-          >
+          <div className="flex gap-4 text-lg">
             <a
               href="https://facebook.com/yourprofile"
               target="_blank"
@@ -71,12 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Right: Made with love */}
-          <div
-            className="text-sm text-center md:text-right"
-            data-aos="fade-left"
-            data-aos-delay="900"
-            data-aos-duration="1200" 
-          >
+          <div className="text-sm text-center md:text-right">
             <p>© {new Date().getFullYear()} Mohammad Oli. All rights reserved.</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">
               Made with ❤️ using React & Tailwind
