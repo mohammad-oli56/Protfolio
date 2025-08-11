@@ -27,6 +27,8 @@ export const DrawCircleText = () => {
             />
           </svg>
         </span>{" "}
+
+        
         with Simple AI Tools
       </h1>
 

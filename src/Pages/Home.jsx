@@ -24,7 +24,7 @@ const Home = () => {
             <ScrollTimeline></ScrollTimeline>
              <HoverImageLinks></HoverImageLinks>
             {/* <SkillSection/> */}
-            {/* <DrawCircleText></DrawCircleText> */}
+            <DrawCircleText></DrawCircleText>
             {/* <ProjectSection/> */}
             <ContactSection/>
         
