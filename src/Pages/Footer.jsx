@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Center: Social Links */}
           <div className="flex gap-4 text-lg">
             <a
-              href="https://facebook.com/yourprofile"
+              href="https://www.facebook.com/mohammad.oli.560581/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-indigo-600 transition"
@@ -31,7 +31,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/mohammad-oli/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-indigo-600 transition"
@@ -39,7 +39,7 @@ const Footer = () => {
               <FaLinkedinIn />
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/mohammad-oli56"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-indigo-600 transition"

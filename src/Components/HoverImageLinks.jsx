@@ -31,6 +31,7 @@ export const HoverImageLinks = () => {
         <LinkItem
           heading="MovieVerse"
           title="Movieverse Seamless Movie Streaming & Subscription Platform"
+          tech={["React", "Tailwind", "Firebase", "MongoDB", "Express"]}
           subheading="Discover, subscribe, and stream movies effortlessly and download favorites all in one React app."
           imgSrc="https://i.ibb.co.com/FLKtsNQr/Whats-App-Image-2025-08-11-at-20-59-33-a24c7433.jpg"
           href="https://dainty-clafoutis-c0645b.netlify.app/"

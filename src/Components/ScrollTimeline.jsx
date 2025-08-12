@@ -10,7 +10,7 @@ const StarIcon = () => <FaStar />;
 const ScrollTimeline = () => {
   return (
     <>
-     <div id='education' className='hidden lg:block'>
+     <div id="education" className='hidden lg:block'>
        <div className='font-bold  text-3xl flex justify-center gap-90 items-center text-center'>
         <h1>Education</h1>
         <h1>Experience</h1>
