@@ -87,10 +87,10 @@ const Banner = () => {
 
                     {/* Tag Labels */}
                     <span className="absolute top-8 lg:left-20 -left-10 bg-white px-3 py-1 text-sm font-medium shadow rounded-md">
-                        UI/UX Design
+                       Problem solver
                     </span>
                     <span className="absolute top-14 lg:right-20 -right-10  bg-white px-3 py-1 text-sm font-medium shadow rounded-md">
-                        Web Consulting
+                       MernStack Developer
                     </span>
                     <span className="absolute bottom-8 lg:left-10 -left-10 bg-white px-3 py-1 text-sm font-medium shadow rounded-md">
                         Web Development

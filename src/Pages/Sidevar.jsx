@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidevar = () => {
   return (
-    <div className="fixed top-1/2 left-4 transform -translate-y-1/2">
+    <div className="fixed  top-1/2 left-4 transform -translate-y-1/2">
       <a
         href="https://docs.google.com/document/d/1DlwP2QFVmgwnC5Gn63_EX8BYwyaFrIEMCYJ6hd9VL-U/edit?usp=sharing"
         target="_blank"

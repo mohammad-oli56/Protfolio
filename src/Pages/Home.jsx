@@ -17,17 +17,23 @@ import Contact from '../Components/Contact';
 const Home = () => {
     return (
         <div>
+          
             <Banner/>
             <About/>
-            <ClipPathLinks></ClipPathLinks>
-            {/* <Skills></Skills> */}
+            <ClipPathLinks></ClipPathLinks> 
+
+           {/* <Skills></Skills> */}
            
             <ScrollTimeline></ScrollTimeline>
+            <h1 className='text-black text-center font-bold text-4xl my-5'> My Projects</h1>
              <HoverImageLinks></HoverImageLinks>
+
             {/* <SkillSection/> */}
-            {/* <DrawCircleText></DrawCircleText> */}
+            
+
             {/* <ProjectSection/> */}
             {/* <ContactSection/> */}
+
             <Contact></Contact>
         
         </div>

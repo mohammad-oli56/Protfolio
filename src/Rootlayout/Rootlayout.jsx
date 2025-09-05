@@ -10,7 +10,9 @@ const Rootlayout = () => {
       <Navbar />
 
       <div className="flex bg-gray-50 flex-1">
-        <Sidevar />
+        <div className='hidden lg:block'>
+          <Sidevar />
+        </div>
         <main className="flex-1 ">
           <Outlet />
         </main>

@@ -18,7 +18,7 @@ export const HoverImageLinks = () => {
           projectcode="https://github.com/mohammad-oli56/AthleticHub2?tab=readme-ov-file"
         />
 
-        {/* Other Demo Links */}
+        {/* Plant-World */}
         <LinkItem
           heading="Plant-World"
           title="Plant Care Tracker Manage watering,and health monitoring with ease"
@@ -28,17 +28,17 @@ export const HoverImageLinks = () => {
           href="https://assingment-10-9c374.web.app/"
           projectcode="https://github.com/mohammad-oli56/Plant-World"
         />
+
+        {/* MovieVerse */}
         <LinkItem
           heading="MovieVerse"
           title="Movieverse Seamless Movie Streaming & Subscription Platform"
-          tech={["React", "Tailwind", "Firebase", "MongoDB", "Express"]}
           subheading="Discover, subscribe, and stream movies effortlessly and download favorites all in one React app."
+          tech={["React", "Tailwind", "Firebase", "MongoDB", "Express"]}
           imgSrc="https://i.ibb.co.com/FLKtsNQr/Whats-App-Image-2025-08-11-at-20-59-33-a24c7433.jpg"
           href="https://dainty-clafoutis-c0645b.netlify.app/"
           projectcode="https://github.com/mohammad-oli56/MovieVerse"
         />
-        
-        
       </div>
     </section>
   );
@@ -77,9 +77,9 @@ const LinkItem = ({ heading, title, imgSrc, subheading, href, tech, projectcode 
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-6 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="group relative flex flex-col md:flex-row items-start justify-between border-b-2 border-neutral-700 py-6 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
-      <div>
+      <div className="w-full md:w-3/4">
         {/* Heading */}
         <motion.span
           variants={{
@@ -91,7 +91,7 @@ const LinkItem = ({ heading, title, imgSrc, subheading, href, tech, projectcode 
             staggerChildren: 0.05,
             delayChildren: 0.15,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-3xl sm:text-4xl md:text-6xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -108,20 +108,13 @@ const LinkItem = ({ heading, title, imgSrc, subheading, href, tech, projectcode 
           ))}
         </motion.span>
 
-        {/* Title */}
-        <motion.span
-          variants={{
-            initial: { opacity: 0 },
-            whileHover: { opacity: 1 },
-          }}
-          transition={{ type: "spring" }}
-          className="relative z-10 mt-2 block text-xl text-neutral-500 group-hover:text-neutral-50"
-        >
+        {/* Title - Always visible on mobile, hover color on desktop */}
+        <span className="relative z-10 mt-2 block text-lg sm:text-xl text-neutral-500 md:group-hover:text-neutral-50">
           {title}
-        </motion.span>
+        </span>
 
-        {/* Subheading */}
-        <span className="relative z-10 mt-2 block text-base text-neutral-500 group-hover:text-neutral-50">
+        {/* Subheading - Same behavior */}
+        <span className="relative z-10 mt-2 block text-base text-neutral-500 md:group-hover:text-neutral-50">
           {subheading}
         </span>
 
@@ -140,7 +133,7 @@ const LinkItem = ({ heading, title, imgSrc, subheading, href, tech, projectcode 
         )}
 
         {/* Buttons */}
-        <div className="relative z-10 mt-4 flex gap-3">
+        <div className="relative z-10 mt-4 flex flex-wrap gap-3">
           <a
             href={href}
             target="_blank"
@@ -160,9 +153,16 @@ const LinkItem = ({ heading, title, imgSrc, subheading, href, tech, projectcode 
             </a>
           )}
         </div>
+
+        {/* Static Image for Mobile */}
+        <img
+          src={imgSrc}
+          alt={`Image representing ${heading}`}
+          className="block md:hidden mt-6 w-full max-w-xs rounded-lg object-cover"
+        />
       </div>
 
-      {/* Hover Image */}
+      {/* Hover Image for Desktop */}
       <motion.img
         style={{
           top,
@@ -176,7 +176,7 @@ const LinkItem = ({ heading, title, imgSrc, subheading, href, tech, projectcode 
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64 hidden md:block"
         alt={`Image representing ${heading}`}
       />
 
@@ -187,7 +187,7 @@ const LinkItem = ({ heading, title, imgSrc, subheading, href, tech, projectcode 
           whileHover: { x: "0%", opacity: 1 },
         }}
         transition={{ type: "spring" }}
-        className="relative z-10 p-4"
+        className="relative z-10 p-4 hidden md:block"
       >
         <FiArrowRight className="text-5xl text-neutral-50" />
       </motion.div>

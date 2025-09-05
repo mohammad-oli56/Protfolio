@@ -9,7 +9,7 @@ const Contact = () => {
     message: "",
   });
 
-  // Handle input changes
+
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -17,22 +17,21 @@ const Contact = () => {
     }));
   };
 
-  // Handle form submission
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simple validation (name, email, message should not be empty)
+
     if (!formData.name || !formData.email || !formData.message) {
       toast.error("Please fill all fields");
       return;
     }
 
-    // Here you can add your form submit logic (API call, email service etc.)
-    // For now just show success toast
+
 
     toast.success("Successfully sent!");
 
-    // Optionally, reset form
+
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -42,22 +41,22 @@ const Contact = () => {
         {/* Heading */}
         <h1 className="text-4xl font-bold text-black mb-4">Contact Me</h1>
 
-        {/* Email link */}
+
         <a
           href="mailto:olimohammad286@gmail.com"
-          className="text-3xl font-semibold text-blue-600 hover:underline"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl px-2 font-semibold text-blue-600 hover:underline break-words text-center sm:text-left"
         >
           olimohammad286@gmail.com
         </a>
 
-        {/* Subtitle */}
+
         <p className="text-gray-500 mt-2 mb-10">
           Feel free to contact me with any inquiries or questions!
         </p>
 
-        {/* Contact Form */}
+
         <form className="space-y-6 text-left" onSubmit={handleSubmit}>
-          {/* Name & Email */}
+     
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm text-blue-600 mb-1">Name</label>
@@ -83,7 +82,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Message */}
+         
           <div>
             <label className="block text-sm text-blue-600 mb-1">Message</label>
             <textarea
@@ -95,7 +94,7 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          {/* Submit */}
+          
           <div className="flex justify-end">
             <button
               type="submit"
@@ -106,7 +105,7 @@ const Contact = () => {
           </div>
         </form>
 
-        {/* Toast Container */}
+
         <ToastContainer position="top-center" autoClose={3000} />
       </div>
     </section>
